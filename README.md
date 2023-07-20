@@ -23,7 +23,7 @@ jupyter notebook password
 - Running jupyter notebook in the docker image
 
 ``` terminal
-jupyter notebook --ip=0.0.0.0 --port=<container-port> --allow-root --NotebookApp.token='<your-token>' --NotebookApp.allow-origin='*'
+jupyter notebook --ip=0.0.0.0 --port=<container-port> --allow-root --NotebookApp.token='<your-token>' --NotebookApp.allow_origin='*'
 ```
 
 where --ip=0.0.0.0 resets the ip of your docker inside the docker image. in order to check your real ip run:
@@ -47,5 +47,5 @@ pip install numpy pandas jupyter tensorflow matplotlib scikit-learn
 jupyter notebook --generate-config
 jupyter notebook password
 
-jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token='helloworld' --NotebookApp.allow-origin='*'
+jupyter notebook --ip=0.0.0.0 --port=8888 --allow-root --NotebookApp.token='helloworld' --NotebookApp.allow_origin='*'
 ```
